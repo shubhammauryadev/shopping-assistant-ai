@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ai-shopping-assistant"
+version = "0.1.0"
+description = "AI Shopping Assistant"
+authors = ["Ankit Agarwal <ankit@predixtions.com>"]
+readme = "README.md"
+packages = [{include = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "*"
+uvicorn = "*"
+sqlalchemy = "*"
+pydantic = "*"
+httpx = "*"
+python-dotenv = "*"
+langchain = "*"
+langchain-ollama = "*"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
